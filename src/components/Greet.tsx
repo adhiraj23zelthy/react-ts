@@ -2,7 +2,7 @@ import React from 'react'
 
 type myProps = {
     name: string, 
-    messageCount: number,
+    messageCount?: number,
     isLoggedIn: boolean
 }
 const Greet = (props: myProps) => {
