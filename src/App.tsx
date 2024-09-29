@@ -7,6 +7,7 @@ import PersonList from './components/PersonList';
 import Status from './components/Status';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
+import Button from './components/Button';
 
 // USE TYPES WHEN MAKING APPLICATIONS
 // USE INTERFACES WHEN MAKING LIBRARIES
@@ -14,12 +15,7 @@ import Oscar from './components/Oscar';
 function App() {
   return (
     <div className="App">
-      <Status status='error' />
-      <Heading>Title here</Heading>
-      <Oscar>
-        <Heading>Oscar Title</Heading>
-      </Oscar>
-      <Greet name='Sam' isLoggedIn={true} />
+      <Button onClick={()=>alert('Button clicked')} />
     </div>
   );
 }
