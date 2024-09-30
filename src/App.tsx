@@ -12,6 +12,7 @@ import Input from './components/Input';
 import Container from './components/Container';
 import LoggedIn from './components/state/LoggedIn';
 import User from './components/state/User';
+import Counter from './components/state/Counter';
 
 // USE TYPES WHEN MAKING APPLICATIONS
 // USE INTERFACES WHEN MAKING LIBRARIES
@@ -19,7 +20,7 @@ import User from './components/state/User';
 function App() {
   return (
     <div className="App">
-      <User />
+      <Counter />
     </div>
   );
 }
