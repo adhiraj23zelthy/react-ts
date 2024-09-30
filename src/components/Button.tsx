@@ -1,6 +1,6 @@
 import React from 'react'
 type BtnProps = {
-    onClick : ()=>void
+    onClick : (event: React.MouseEvent<HTMLButtonElement>)=>void
 }
 const Button = (props:BtnProps) => {
   return (

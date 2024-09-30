@@ -8,6 +8,7 @@ import Status from './components/Status';
 import Heading from './components/Heading';
 import Oscar from './components/Oscar';
 import Button from './components/Button';
+import Input from './components/Input';
 
 // USE TYPES WHEN MAKING APPLICATIONS
 // USE INTERFACES WHEN MAKING LIBRARIES
@@ -15,7 +16,8 @@ import Button from './components/Button';
 function App() {
   return (
     <div className="App">
-      <Button onClick={()=>alert('Button clicked')} />
+      <Input placeholder='Enter name' onChange={(event)=>console.log(event.target.value)} />
+      <Button onClick={(event)=>console.log('Button clicked', event)} />
     </div>
   );
 }
